@@ -1,0 +1,10 @@
+<ng-container *ngFor="let item of filterData">
+    <button type="button" *ngIf="item.id !== selectedButtonId" class="btn btn-secondary tag" (click)="itemClicked(item)"
+        (mouseover)="mouseHover(item)" (mouseout)="mouseHoverOver(item)"
+        [style.background-color]="hoverItem.id === item.id ? hoverItem.backgroundColor : '' "
+        [style.color]="hoverItem.id === item.id ? hoverItem.textColor : '' ">{{item.displayName}}
+    </button>
+    <button type="button" *ngIf="item.id === selectedButtonId" class="btn btn-secondary tag"
+        [style.background-color]="item.backgroundColor" [style.color]="item.textColor"
+        (click)="itemClicked(item)">{{item.displayName}}</button>
+</ng-container>

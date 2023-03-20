@@ -1,0 +1,26 @@
+.filter-container {
+    margin: 0 10px;
+}
+
+.card-container {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 10px;
+
+    .info-container {
+        margin-bottom: 20px;
+    }
+
+    .tag {
+        padding: 5px 10px;
+        display: inline-block;
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+
+    .card-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
