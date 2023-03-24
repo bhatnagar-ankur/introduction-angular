@@ -15,8 +15,19 @@ In this repository we will be covering some of the basics of angular. The reposi
 
 
 Some of the references which can be used to learn or enhance frontend skills.
-- [MDN For HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [MDN For JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [MDN For CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- MDN
+    - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [CSS Tricks](https://css-tricks.com/)
-- 
+- [Angular Cheat Sheet](https://angular.io/guide/cheatsheet)
+- [Can I Use](https://caniuse.com/)
+- Douglas Crockford Lectures
+    - [Douglas Crockford: The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M)
+    - [Douglas Crockford: Advanced JavaScript](https://www.youtube.com/watch?v=DwYPG6vreJg)
+    - [Douglas Crockford: An Inconvenient API - The Theory of the DOM](https://www.youtube.com/watch?v=Y2Y0U-2qJMs)
+
+
+<br/>
+
+>  `We are open to add new links here. Any recommendation is much appreciated.`😀
