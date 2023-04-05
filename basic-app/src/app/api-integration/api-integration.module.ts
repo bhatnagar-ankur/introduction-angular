@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ApiComponent } from './components/reddit-api/reddit-api.component';
 import { AppCommonModule } from '../common/common/app-common.module';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RedditComponent } from './components/reddit-api/reddit-api.component';
+import { RedditHomeComponent } from '../reddit-home/reddit-home.component';
+import { RedditSubPageComponent } from '../reddit-sub-page/reddit-sub-page.component';
 
 
 @NgModule({
   declarations: [
-    ApiComponent,
+    RedditComponent,
+    RedditHomeComponent,
+    RedditSubPageComponent
   ],
   imports: [
     CommonModule,

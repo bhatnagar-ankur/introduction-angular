@@ -14,8 +14,7 @@ export class ParseAPIData {
         this.textColor = data.link_flair_text_color === 'light' ? '#ffffff' : '#000000';
         this.thumbnail = data.thumbnail || '';
         this.title = data.title || 'Title is not present, please create one';
-        this.topicURL = `${this.baseURL}${data.permalink}` || '';
+        this.topicURL = `${this.baseURL}${(data.permalink as string).substring(0, data.permalink.length - 1)}` || '';
         this.url = data.url || 'N/A';
-        // debugger;
     }
 }
