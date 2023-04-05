@@ -1,0 +1,54 @@
+<mat-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <span class="fieldContainer">
+        <mat-form-field appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First name" formControlName="firstName" required>
+        </mat-form-field>
+      </span>
+      <span class="fieldContainer">
+        <mat-form-field appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last name" formControlName="lastName" required>
+        </mat-form-field>
+      </span>
+      <div>
+        <button mat-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+    <form [formGroup]="secondFormGroup">
+      <span class="fieldContainer">
+        <mat-form-field appearance="fill">
+          <mat-label>House, Street</mat-label>
+          <input matInput formControlName="address1" placeholder="Ex. 1 Main St" required>
+        </mat-form-field>
+      </span>
+      <span class="fieldContainer">
+        <mat-form-field appearance="fill">
+          <mat-label>City, State and Zip</mat-label>
+          <input matInput formControlName="address2" placeholder="New York, NY, 10001" required>
+        </mat-form-field>
+      </span>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Summary</ng-template>
+    <mat-list>
+      <mat-list-item>Name: {{firstFormGroup.value.firstName}} {{firstFormGroup.value.lastName}}</mat-list-item>
+      <mat-list-item>Address: {{secondFormGroup.value.address1}}, {{secondFormGroup.value.address2}}</mat-list-item>
+    </mat-list>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button color="warn" (click)="stepper.reset()">Reset</button>
+      <button mat-button color="primary" (click)="submitForm()">Submit</button>
+    </div>
+  </mat-step>
+</mat-stepper>
